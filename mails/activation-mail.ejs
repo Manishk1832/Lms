@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Activation Email</title>
+    <style>
+  
+        .email-wrapper{
+          max-width: 600px;
+          margin:0 auto;
+        }
+        .email-header{
+          text-align: center;
+          text-wrap: wrap;
+          background-color: #6C0345;
+          padding: 20px;
+          color: #fff;
+        }
+        .email-body{
+          padding: 20px;
+          background-color: #fff;
+        }
+        .email-footer{
+          background-color: #FFF8DC;
+          padding: 20px;
+          text-align: center;
+        }
+        #important{
+          font-size: 18px;
+          font-weight: bold;
+          color: red;
+          text-align: center;
+        }
+
+        #ignore{
+          text-align: center;
+          height: 20px;
+          background-color:#FFD31D;
+          color:white;
+        }
+
+        h2{
+          text-align: center;
+        }
+          
+        </style>
+</head>
+<body>
+  
+    <div class="email-wrapper">
+        <div class="email-header">
+            <h1>Welcome to E-Learning</h1>
+        </div>
+        <div class="email-body">
+            <p>Hello <%= user.name %> </p>
+            <p>Thank You registering with E-Learning. To activate your account, Please use the following activation code:</p>
+            <h2> <%= activationCode %> </h2>
+            <p id="important">Please enter this code on the activation page within the next 5 minutes.</p>
+            <p id="ignore">If you did not register for a Diman digital account, Please ignore this email.</p>
+        </div>
+        <div class="email-footer">
+            <p>If you have any questions, Please don't hesitate to contact us at <a href="mailto:dimandigital@gmail.com">dimandigital@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
